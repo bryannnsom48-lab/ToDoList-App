@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list with Notifications</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Donegal+One|Lily+Script+One" type="text/css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <h1>To-do list</h1>
+
+    <div class="task-box">
+        
+        <ul id="task-list">
+
+        </ul>
+    </div>
+
+    <div class="form-box">
+
+        <h2>Add new to-do item.</h2>
+
+        <form action="index.html" id="task-form">
+
+            <div class="full-width">
+                <label for="title">Task title:</label>
+                <input type="text" id="title" required>
+            </div>
+
+            <div class="half-width">
+                <label for="deadline-hours">Hours (hh):</label>
+                <input type="number" id="deadline-hours" required>
+            </div>
+
+            <div class="half-width">
+                <label for="deadline-minutes">Mins (mm):</label>
+                <input type="number" id="deadline-minutes" required>
+            </div>
+
+            <div class="third-width">
+                <label for="deadline-day">Day:</label>
+                <select id="deadline-day" required>
+                    <option value="01">01</option>
+                    <option value="02"></option>
+                    <option value="03"></option>
+                    <option value="04"></option>
+                    <option value="05"></option>
+                    <option value="06"></option>
+                    <option value="07"></option>
+                    <option value="08"></option>
+                    <option value="09"></option>
+                    <option value="10"></option>
+                    <option value="11"></option>
+                    <option value="12"></option>
+                    <option value="13"></option>
+                    <option value="14"></option>
+                    <option value="15"></option>
+                    <option value="16"></option>
+                    <option value="17"></option>
+                    <option value="18"></option>
+                    <option value="19"></option>
+                    <option value="20"></option>
+                    <option value="21"></option>
+                    <option value="22"></option>
+                    <option value="23"></option>
+                    <option value="24"></option>
+                    <option value="25"></option>
+                    <option value="26"></option>
+                    <option value="27"></option>
+                    <option value="28"></option>
+                    <option value="29"></option>
+                    <option value="30"></option>
+                    <option value="31"></option>
+
+                </select>
+            </div>
+
+            <div class="third-width">
+                <label for="deadline-month">Month:</label>
+                <select value="January">January</select>
+                <select value="February">February</select>
+                <select value="March">March</select>
+                <select value="April">April</select>
+                <select value="May">May</select>
+                <select value="June">June</select>
+                <select value="July">July</select>
+                <select value="August">August</select>
+                <select value="September">September</select>
+                <select value="October">October</select>
+                <select value="November">November</select>
+                <select value="December">December</select>
+            </div>
+
+            <div class="third-width">
+                <label for="deadline-year">Year:</label>
+                <select id="deadline-year" required></select>
+            </div>
+
+            <div><input type="submit" id="submit" value="Add Task"></div>
+        </form>
+    </div>
+
+    <div id="toolbar">
+        <ul id="notifications">
+
+        </ul>
+
+        <button id="enable">
+            Enable notifications
+        </button>
+    </div>
+    
+</body>
+</html>
